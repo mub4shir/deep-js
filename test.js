@@ -1,11 +1,12 @@
+//'use strict';
 var teacher = 'Kyle';
 
 function otherClass() {
   teacher = 'Suzy';
-  topic = 'React';
-  console.log('Welcome');
+  function ask(question) {
+    console.log(teacher, question);
+  }
+  ask('why?');
 }
 otherClass();
-
-console.log(teacher);
-console.log(topic);
+//ask('????');
